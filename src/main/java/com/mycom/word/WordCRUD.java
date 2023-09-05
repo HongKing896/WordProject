@@ -20,7 +20,7 @@ public class WordCRUD implements ICRUD{
     @Override
     public Object add() {
         System.out.print(" => 난이도(1,2,3) & 새 단어 입력 :");
-        
+
         return null;
     }
 
