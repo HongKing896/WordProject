@@ -2,8 +2,14 @@ package com.mycom.word;
 import java.util.Scanner;
 public class WordManager {
     Scanner sc = new Scanner(System.in);
+    WordCRUD wordCRUD;
+
+    public WordManager() {
+        wordCRUD = new WordCRUD(sc);
+    }
+
     public int selectMenu() {
-        System.out.print("******************** \n" +
+        System.out.print("********************\n" +
                 "1. 모든 단어 보기\n" +
                 "2. 수준별 단어 보기\n" +
                 "3. 단어 검색\n" +
@@ -20,7 +26,7 @@ public class WordManager {
         while(true) {
             int menu = selectMenu();
             switch (menu){
-                case 0 : break;
+                case 0 : return;
                 case 1 : {
                     //list
                 }
@@ -31,7 +37,7 @@ public class WordManager {
                     //search
                 }
                 case 4 : {
-                    //add
+                    wordCRUD.addWord();
                 }
                 case 5 : {
                     //update
@@ -42,6 +48,8 @@ public class WordManager {
                 case 7 : {
                     //file save
                 }
+                default :
+                    System.out.println("잘못된 입력입니다.");
             }
         }
     }
