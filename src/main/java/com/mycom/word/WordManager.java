@@ -29,6 +29,8 @@ public class WordManager {
                 case 0 : return;
                 case 1 : {
                     //list
+                    wordCRUD.listAll();
+                    break;
                 }
                 case 2 : {
                     //classified list

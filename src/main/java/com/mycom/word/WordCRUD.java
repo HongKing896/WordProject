@@ -47,6 +47,18 @@ public class WordCRUD implements ICRUD{
 
     @Override
     public void selectOne(int id) {
+    }
 
+    public void listAll(){
+        if(list.isEmpty()) {
+            System.out.println("저장된 단어가 없습니다.");
+            return;
+        }
+        System.out.println("--------------------------------");
+        for(int i = 0; i < list.size(); i++) {
+            System.out.print(i+1 + " ");
+            System.out.println(list.get(i).toString());
+        }
+        System.out.println("--------------------------------");
     }
 }
