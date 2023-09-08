@@ -46,4 +46,13 @@ public class Word {
     public void setMeaning(String meaning) {
         this.meaning = meaning;
     }
+
+    @Override
+    public String toString() {
+        String slevel = "";
+        for(int i = 0; i < level; i++) slevel += "*";
+        return String.format("-3%s",slevel)
+                + String.format("15%s",word) + "   " + meaning;
+    }
 }
+--------------------------------
