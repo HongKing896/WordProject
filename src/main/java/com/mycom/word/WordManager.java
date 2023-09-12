@@ -43,7 +43,8 @@ public class WordManager {
                     break;
                 }
                 case 5 : {
-                    //update
+                    wordCRUD.updateItem();
+                    break;
                 }
                 case 6 : {
                     //delete

@@ -84,8 +84,11 @@ public class WordCRUD implements ICRUD{
         System.out.print("=> 수정할 단어 검색 : ");
         String keyword = sc.next();
         ArrayList<Integer> idList = this.listAll(keyword);
+        if(idList.isEmpty()) return;
         System.out.print("=> 수정할 번호 선택 : ");
         int id = sc.nextInt();
+        sc.nextLine();
+        System.out.print("=> 뜻 입력 : ");
         String meaning = sc.nextLine();
         Word word = list.get(idList.get(id-1));
         word.setMeaning(meaning);
