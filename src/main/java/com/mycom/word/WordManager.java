@@ -34,7 +34,8 @@ public class WordManager {
                     break;
                 }
                 case 2 : {
-                    //classified list
+                    wordCRUD.searchLevel();
+                    break;
                 }
                 case 3 : {
                     //search
@@ -49,9 +50,11 @@ public class WordManager {
                 }
                 case 6 : {
                     wordCRUD.deleteItem();
+                    break;
                 }
                 case 7 : {
-                    //file save
+                    wordCRUD.saveFile();
+                    break;
                 }
                 default :
                     System.out.println("잘못된 입력입니다.");
