@@ -8,7 +8,7 @@
 ![ADD Function](https://github.com/HongKing896/WordProject/blob/master/screenshot/1.png)
 2. 수준별 단어보기  
 ![ADD Function](https://github.com/HongKing896/WordProject/blob/master/screenshot/2.png)
-3. 단어 검색하기
+3. 단어 검색하기  
 ![ADD Function](https://github.com/HongKing896/WordProject/blob/master/screenshot/2.png)
 4. 단어장에 단어 추가하기  
 ![ADD Function](https://github.com/HongKing896/WordProject/blob/master/screenshot/2.png)
