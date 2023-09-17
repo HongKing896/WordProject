@@ -27,7 +27,10 @@ public class WordManager {
         while(true) {
             int menu = selectMenu();
             switch (menu){
-                case 0 : return;
+                case 0 : {
+                    System.out.println("프로그램 종료! 다음에 만나요~");
+                    return;
+                }
                 case 1 : {
                     //list
                     wordCRUD.listAll();
@@ -38,7 +41,8 @@ public class WordManager {
                     break;
                 }
                 case 3 : {
-                    //search
+                    wordCRUD.searchWord();
+                    break;
                 }
                 case 4 : {
                     wordCRUD.addItem();
